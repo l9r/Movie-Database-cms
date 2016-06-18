@@ -1,0 +1,85 @@
+#search-page {
+	padding-top: @navbar-height + 30px;
+
+	#all {
+		h2 {
+			margin-top: 0;
+			font-family: Bitter;
+			font-size: 25px;
+			border-bottom: 1px solid darken(@gray, 10%);
+			padding: 0 0 5px 5px;
+		}
+	}
+
+	.nothing-found {
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.well {
+		background: #fff;
+
+		p {
+			margin: 0;
+			padding-top: 7px;
+			font-size: 15px;
+			color: @navbar-default-link-color;
+		}
+
+		ul {
+			margin: 0;
+
+			> .active > .btn {
+				background: darken(@brand-primary, 9%);
+				border-color: darken(@brand-primary, 9%);
+			}
+		}
+
+
+	}
+
+	.pretty-figure {
+		padding: 0 5px;
+
+		> figcaption {
+			padding: 15px 10px;
+			border-radius: 2px;
+			height: 50px;
+			font-size: 13px;
+		}
+
+		.img-responsive {
+			width: 100%;
+			height: auto;
+			border: 2px solid #fff;
+			border-bottom: none;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+		}
+
+		@media (min-width: @screen-sm) { 
+			.img-responsive {
+				height: 356px;
+			}
+		}
+
+		@media (min-width: @screen-md) { 
+			.img-responsive {
+				height: 405px;
+			}
+		}
+
+		@media (min-width: @screen-lg) { 
+			.img-responsive {
+				height: 322px;
+			}
+		}
+
+		&:first-of-type {
+			padding-left: 0;
+		}
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+	}
+}
