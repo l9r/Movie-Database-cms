@@ -42,7 +42,7 @@
 
 			  	@if ($actor['bio'])
 
-			    	<p class="actor-bio">{{{ $actor['bio'] }}}</p>
+			    	<p itemprop="description" class="actor-bio"> {{{ $actor['bio'] }}}</p>
 
 			      	<br>
 			    @else
@@ -64,7 +64,7 @@
 				  @endif
 
 				  @if ($actor['birth_place'])
-				    {{ trans('main.in') }} {{{ $actor['birth_place'] }}}
+				    {{ trans('main.in') }} {<div itemprop="birthplace"> {{ $actor['birth_place'] }} </div>}
 				  @endif
 			    </dd>
 
