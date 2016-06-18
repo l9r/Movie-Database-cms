@@ -1,0 +1,105 @@
+.fb {
+	background: #3468af;
+	color: #fff;
+	border-bottom: 4px solid darken(#3468af, 10%);
+	border-radius: 2px;
+
+	&:hover {
+		background: darken(#3468af, 5%);
+		color: #fff;
+	}
+}
+
+.tw {
+	background: #4fc4f6;
+	color: #fff;
+	border-bottom: 4px solid darken(#4fc4f6, 10%);
+	border-radius: 2px;
+
+	&:hover {
+		background: darken(#4fc4f6, 5%);
+		color: #fff;
+	}
+}
+
+.go {
+	background: #DA4D2F;
+	color: #fff;
+	border-bottom: 4px solid darken(#DA4D2F, 10%);
+	border-radius: 2px;
+
+	&:hover {
+		background: darken(#DA4D2F, 5%);
+		color: #fff;
+	}
+}
+
+.social-login-btns {
+	margin: 25px 0;
+
+	> .btn {
+		margin-bottom: 5px;
+	}
+}
+
+#login-page {
+	padding-top: @navbar-height + 50px;
+
+	#login-box {
+		margin: 8% 0 19% 0;
+		.box-shadow(0 1px 3px rgba(0,0,0,.13));
+		background: #fff;
+		padding: 40px 15px 35px 15px;
+
+		label {
+			font-weight: normal;
+			text-transform: uppercase;
+			color: #777;
+		}
+
+		.login-remember-row { 
+			label {
+				text-transform: none;
+			}
+
+			input {
+				margin-left: 5px;
+			}
+
+			a {
+				padding-left: 25px;
+			}
+		}
+
+		.form-control {
+			background: #fbfbfb;
+			height: 40px;
+			border-radius: 2px;
+		}
+	}
+}
+
+#contact-page {
+	padding-top: @navbar-height + 20px;
+
+	#contact-box {
+		.box-shadow(0 1px 3px rgba(0,0,0,.13));
+		background: #fff;
+		padding: 5px 15px 10px 15px;
+		margin: 25px 0;
+
+		form img {
+			padding-bottom: 15px;
+		}
+
+		input, textarea {
+			margin-bottom: 15px;
+		}
+
+		label {
+			font-weight: normal;
+			text-transform: uppercase;
+			color: #777;
+		}
+	}
+}

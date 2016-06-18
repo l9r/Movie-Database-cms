@@ -1,0 +1,105 @@
+#upload-media-modal {
+	#filter-row {
+		border-top: none;
+		border-left: none;
+	}
+}
+
+.modal-close {
+	position: absolute;
+	top: -10px;
+	right: -25px;
+	color: @brand-primary;
+	border: 0 transparent;
+	outline: 0;
+	font-size: 15px;
+	cursor: pointer;
+	background: transparent;
+	z-index: 1000;
+}
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+.files {
+	> div {
+		display: inline-block;
+		text-align: center;
+		margin-right: 25px;
+
+		.btn {
+			margin-top: 7px;
+		}
+	}
+}
+
+#dropzone {
+	border: 4px dashed @gray;
+	text-align: center;
+	background: #fff;
+
+	> div > h3 {
+		padding-top: 70px;
+		color: darken(@gray, 10%);
+	}
+
+	.btn {
+		margin-bottom: 60px;
+	}
+
+	.checkbox {
+		margin-top: 0;
+		margin-right: 15px;
+	}
+}
+
+#browse > figure {
+	position: relative;
+	display: inline-block;
+	padding: 3px;
+
+	> .img-responsive {
+		width: 100%;
+		height: 200px;
+	}
+
+	> .link-icon {
+		position: absolute;
+		left: 8px;
+		top: 8px;
+		padding: 0 3px;
+		color: #fff;
+		background: @brand-primary;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}	
+}
+
+.delete-icon {
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	padding: 0 5px;
+	color: #fff;
+	background: @brand-danger;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
