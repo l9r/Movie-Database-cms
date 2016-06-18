@@ -5,8 +5,9 @@
     </head>
     <body>
         <h3>{{ trans('main.activate email 1') . ', ' . $username }}!</h3>
- 
+
         <p>
+          Hi thank you for using Our website.
        	  To complete the registration please click the link below.
        	  <br>
        	  <a href="{{ URL::to("activate/{$id}/{$code}") }}">{{ URL::to("activate/{$id}/{$code}") }}</a>
