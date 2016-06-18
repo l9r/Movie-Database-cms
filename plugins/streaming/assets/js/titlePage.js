@@ -1,0 +1,1 @@
+app.viewModels.titles.show.start(<?php echo ! $title->link->isEmpty() ? $title->link->first()->toJson() : null; ?>);

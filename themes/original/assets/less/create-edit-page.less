@@ -1,0 +1,149 @@
+#create-edit-page {
+	background: @gray;
+	padding-top: @navbar-height + 40px;
+
+    .actions-column {
+        p {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+    }
+
+	.nav-justified {
+		a {
+			color: @navbar-default-link-color;
+			border: 1px solid #dddddd;
+			background: @panel-default-heading-bg;
+		}
+
+		.active {
+			font-weight: bold;
+		}
+	}
+
+	.tab-pane {
+		padding: 15px 25px;
+		background: #fff;
+		border: 1px solid #dddddd;
+		border-top: none;
+	}
+
+	.season-btns {
+		margin: 15px 0;
+
+		.pull-right {
+			margin-right: 5px;
+		}
+	}
+
+	#content {
+		padding-bottom: 50px;
+		
+		.autocomplete-container {
+			position: initial;
+			top: 0;
+			display: block;
+
+			.media:hover {
+				background: lighten(#18191B, 5%);
+				cursor: pointer;
+			}
+		}
+	}
+
+	#cast-cont {
+		margin-top: 20px;
+
+		figure {
+			display: inline-block;
+			padding-right: 10px;
+			padding-bottom: 25px;
+
+			figcaption {
+				background: @brand-danger;
+				padding: 6px 10px;
+				color: #fff;
+
+				.fa:hover {
+					cursor: pointer;
+				}
+			}
+
+			.img-responsive {
+				width: 100%;
+				height: auto;
+			}
+
+			@media (min-width: @screen-sm) { 
+				.img-responsive {
+					height: 306px;
+				}
+			}
+
+			@media (min-width: @screen-md) { 
+				.img-responsive {
+					height: 241px;
+				}
+			}
+
+			@media (min-width: @screen-lg) { 
+				.img-responsive {
+					height: 311px;
+				}
+			}	
+		}
+	}
+
+	#images {
+		padding-top: 25px;
+		padding-bottom: 25px;
+
+		.img-responsive {
+			margin-bottom: 20px;
+		}
+
+		.delete-icon {
+			top: 0;
+			right: 15px;
+		}
+	}
+
+	.panel-heading > .fa {
+		padding-right: 5px;
+	}
+
+	.panel .fa-times {
+		color: @brand-danger;
+		padding-right: 3px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.list-inline {
+		margin-top: 10px;
+	}
+}
+
+#upload-media-modal {
+
+	#filter-row {
+        margin: 0 0 75px 0 !important;
+    }
+
+	.modal-body {
+		padding: 0;
+	}
+
+	.col-sm-12 {
+		padding: 0 55px 30px 55px;
+
+		.img-responsive {
+			width: 274px;
+		}
+	}
+
+	#dropzone .btn {
+		margin-bottom: 50px;
+	}
+}

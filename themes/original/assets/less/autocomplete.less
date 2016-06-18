@@ -1,0 +1,50 @@
+.autocomplete-container {
+	position: absolute;
+	top: 90%;
+	z-index: 100;
+	right: auto;
+	min-width: 100%;
+	
+	> .suggestions {
+		background: #18191B;
+		padding: 15px;
+	}
+
+	.media {
+		color: #fff;
+    
+    .media-heading {
+      padding-top: 7px;
+    }
+
+		a {
+			color: #fff;
+      margin-right: 0;
+		}
+	}
+
+	.auto-heading {
+		color: #fff;
+		text-align: center;
+		background: @brand-primary;
+		padding: 15px;
+
+		> span {
+			font-weight: bold;
+		}
+	}
+
+	img {
+		width: 32px;
+		height: 45px;
+	}
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid @brand-primary;
+	margin: 0 auto;
+}

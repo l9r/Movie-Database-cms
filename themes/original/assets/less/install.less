@@ -1,0 +1,183 @@
+#install {
+	background: @gray;
+
+	.container {
+		margin-top: 50px;
+	}
+
+	.step-panel {
+		background: #fff;
+		.box-shadow(1px 1px 2px 0 #d0d0d0);
+		margin-top: 30px;
+		padding: 20px 50px;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	.manual-fill {
+
+		margin-top: 20px;
+
+		input {
+			margin-left: -6px;
+			margin-right: 8px;
+		}
+		.col-sm-6 {
+			padding: 0;
+		}
+	}
+
+	#site_description {
+		padding-bottom: 10px;
+	}
+
+	#configuration {
+		.btn {
+			margin-top: 20px;
+		}
+	}
+
+	#compat-check {
+
+		h4 { 
+			margin-top: 30px;
+			text-align: center;
+		}
+
+		.btn {
+			display: inline-block;
+			margin-right: 10px;
+			margin-bottom: 30px;
+		}
+
+		p {
+			margin: 15px 0 25px 0;
+		}
+	}
+
+	.table {
+		td, th {
+			text-align: center;
+		}
+	}
+
+	.danger {
+		background: @brand-danger;
+		color: #fff;
+		padding: 5px;
+	}
+
+	.success {
+		background: @brand-success;
+		color: #fff;
+		padding: 5px;
+	}
+}
+
+.wizard {
+	display: block;
+	width: 100%;
+	position: relative;
+	padding: 0;
+
+	li {
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		display: block;
+		float: left;
+		width: 25%;
+		text-align: center;
+		padding-left: 0;
+
+		&:before {
+			display: block;
+			border-top: 3px solid #55606E;
+			content: "";
+			font-size: 0;
+			overflow: hidden;
+			position: relative;
+			top: 11px;
+			right: 1px;
+			width: 100%;
+			z-index: 1;
+		}
+
+		&:first-child:before {
+			left: 50%;
+			max-width: 50%;
+		}
+
+		&:last-child:before {
+			max-width: 50%;
+			width: 50%;
+		}
+
+		.title {
+			color: @gray-light;
+			display: block;
+			font-size: 13px;
+			line-height: 15px;
+			max-width: 100%;
+			position: relative;
+			table-layout: fixed;
+			text-align: center;
+			top: 20px;
+			word-wrap: break-word;
+			z-index: 104;
+
+		}
+
+		.step {
+			background: darken(@gray-lighter, 10%);
+			color: #fff;
+			display: inline;
+			font-size: 15px;
+			font-weight: 700;
+			padding: 9px 13.5px;
+			border: 3px solid transparent;
+			border-radius: 50%;
+			line-height: normal;
+			position: relative;
+			text-align: center;
+			z-index: 2;
+		}
+	}
+
+	li.active {
+
+		.step {
+			background: #45C8DC;
+			color: #fff;
+			font-weight: 700;
+			padding: 9px 13.5px;
+			font-size: 15px;
+			border-radius: 50%;
+			border: 3px solid #55606E;
+		}
+
+		.title {
+			color: #55606E;
+		}
+	}
+}
+
+#update {
+	background-color: @gray;
+
+	.container {
+		margin-top: 10%;
+		background-color: #fff;
+		padding: 50px;
+		text-align: center;
+
+		.btn {
+			border-radius: 0;
+			margin-top: 15px;
+		}
+	}
+}

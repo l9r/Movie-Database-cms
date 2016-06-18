@@ -1,0 +1,61 @@
+#actor-page {
+	color: darken(@gray-lighter, 50%) !important;
+	padding-top: @navbar-height+30px;
+
+	.heading {
+		margin: 30px 0;
+	}
+
+	#main-image {
+		> .img-responsive {
+			width: 100%;
+			height: auto;
+			.box-shadow(7px 4px 10px -6px #000);
+
+			@media (min-width: @screen-sm) { 
+				height: 236px;
+			}
+
+			@media (min-width: @screen-md) { 
+				height: 379px;
+			}
+
+			@media (min-width: @screen-lg) { 
+				height: 473px;
+			}
+		}	
+
+	}
+
+	#bio {
+		padding-left: 30px;
+
+		.dl-horizontal dt {
+			text-align: left;
+		}
+	}
+
+	#known-for {
+		figure {
+			padding: 0;
+		}
+
+		.img-responsive {
+			.box-shadow(7px 4px 10px -6px #000);
+			width: 100%;
+			height: auto;
+
+			@media (min-width: @screen-sm) { 
+				height: 270px;
+			}
+
+			@media (min-width: @screen-md) { 
+				height: 413px;
+			}
+
+			@media (min-width: @screen-lg) { 
+				height: 506px;
+			}
+		}
+	}
+}

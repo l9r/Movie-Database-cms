@@ -1,0 +1,46 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"require": {
+		"laravel/framework": "4.2.0",
+		"intervention/image": "1.6.*",
+		"cartalyst/sentry": "2.1.*",
+		"hybridauth/hybridauth": "*",
+		"mews/captcha": "dev-master-l4",
+		"thujohn/rss": "~1.0",
+		"roumen/sitemap": "2.4.*",
+	  	"laravel/cashier": "~2.0"
+
+	},
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php",
+			"app/lib",
+			"plugins"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan optimize"
+		],
+		"pre-update-cmd": [
+			"php artisan clear-compiled"
+		],
+		"post-update-cmd": [
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "stable"
+}

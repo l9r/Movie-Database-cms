@@ -1,0 +1,166 @@
+.streaming-details > #details-container {
+    margin-top: 50px !important;
+    margin-bottom: 50px;
+}
+
+.episode-page .streaming-details > #details-container {
+    margin-top: 0 !important;
+    margin-bottom: 20px;
+}
+
+.streaming-details #social {
+    left: -15px !important;
+}
+
+.streaming-details #lists {
+    right: -15px !important;
+}
+
+.links-table {
+    margin-bottom: 40px;
+}
+
+.links-table td, .links-table tr, .links-table th {
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+.links-table .name {
+    text-align: left !important;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.links-table .hover:hover {
+    background-color: #66aa33;
+    color: #fff;
+}
+
+.links-table img {
+    margin-right: 6px;
+}
+
+.links-table .vote-positive {
+    display: inline-block;
+    color: #5cb85c;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.links-table .vote-positive:hover {
+    color: #047c24;
+}
+
+.links-table .vote-negative {
+    display: inline-block;
+    color: #D82123;
+    cursor: pointer;
+}
+
+.links-table .vote-negative:hover {
+    color: #BF080A;
+}
+
+.episode-page.paper-theme .links-table {
+    margin: 30px 15px 0 15px;
+    width: 100%;
+    float: left;
+}
+
+#videos .tab-content {
+	padding-top: 7px;
+}
+
+#videos	.active .report {
+	display: inline-block;
+}
+
+#videos	.report {
+	display: none;
+	color: #D82123;
+	padding-left: 5px;
+}
+
+#videos .report:hover {
+	cursor: pointer;
+}
+
+#stream-modal .modal-body {
+	padding: 0;
+	background: #F2F2F3;
+}
+
+#stream-modal .modal-content {
+	line-height: 0;
+}
+
+#stream-modal .modal-content .nav-tabs {
+	padding: 0 15px;
+	margin-top: 0;
+}
+
+#stream-modal .modal-content .tab-content {
+	padding-top: 0;
+}
+
+#actions-row {
+	padding: 3px;
+	margin: 0 0 10px 0;
+	border: 1px solid #dddddd;
+}
+
+#actions-row .col-sm-4, #actions-row .col-sm-3 {
+	padding: 0;
+}
+
+#actions-row #lists {
+	text-align: right;
+}
+
+#actions-row #status {
+	padding-top: 7px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.status {
+	position: absolute;
+	top: 0;
+	background: #40A088;
+	color: #fff;
+	padding: 5px;
+}
+
+.checkbox {
+	margin: -25px 10px 40px 10px;
+	color: darken(#999999, 10%);
+}
+
+@media (max-width: 412px) {
+	#title-page > .container #lists {
+		position: static;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	#title-page #social {
+		display: none;
+		height: 0;
+	}
+
+	#videos {
+		margin-top: 90px;
+	}
+
+	.streaming-details > #details-container {
+		margin-top: 0 !important;
+		margin-bottom: 20px;
+	}
+}
+
+#play-trailer {
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 15px);
+}
