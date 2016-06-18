@@ -5,7 +5,7 @@
 @stop
 
 @section('meta')
-<meta name="title" content="{{{ $actor['name'] . ' - ' . $options->getSiteName() }}}">
+  <meta name="title" content="{{{ $actor['name'] . ' - ' . $options->getSiteName() }}}">
   <meta name="description" content="{{{ $actor['bio'] }}}">
   <meta name="keywords" content="{{ $options->getActorPageKeywords() }}">
   <meta property="og:title" content="{{{ $actor['name'] . ' - ' . $options->getSiteName() }}}"/>
@@ -24,7 +24,7 @@
 @stop
 
 @section('bodytag')
-  <body id="actor-page">
+  <body id="actor-page" itemscope itemtype="https://schema.org/Person">
 @stop
 
 @section('content')
@@ -33,15 +33,15 @@
 
 		<div class="row">
 
-			<section class="col-sm-3" id="main-image">
+			<section class="col-sm-3" id="main-image" itemprop="image">
 				<img src="{{{ asset($actor['image']) }}}" alt="{{ 'Image of ' . $actor['name'] }}" class="img-responsive thumb">
 			</section>
 
 			<section class="col-sm-9" id="bio">
-				<h1>{{{ $actor['name'] }}}</h1>
+				<h1 itemprop="name" > {{{ $actor['name'] }}}</h1>
 
 			  	@if ($actor['bio'])
-			    
+
 			    	<p class="actor-bio">{{{ $actor['bio'] }}}</p>
 
 			      	<br>
@@ -51,12 +51,12 @@
 
 			    @endif
 
-			    <a target="_blank" href="{{{ $actor['full_bio_link'] }}}"><i class="fa fa-book"></i> {{ trans('main.read bio at') . ' ' . $provider }}</a> | 
+			    <a target="_blank" href="{{{ $actor['full_bio_link'] }}}"><i class="fa fa-book"></i> {{ trans('main.read bio at') . ' ' . $provider }}</a> |
 			    <a target="_blank" href="{{ Helpers::wikiUrl($actor['name']) }}">{{ trans('main.read bio at') }} Wikipedia</a>
-			    
+
 				<hr>
 
-			  <dl class="dl-horizontal">			  
+			  <dl class="dl-horizontal">
 			    <dt>{{ trans('main.born') }}: </dt>
 			    <dd>
 			      @if ($actor['birth_date'])
@@ -67,7 +67,7 @@
 				    {{ trans('main.in') }} {{{ $actor['birth_place'] }}}
 				  @endif
 			    </dd>
-			    
+
 			    @if ( ! $actor->title->isEmpty())
 			    	<dt>{{ trans('main.movie/tv credits') }}: </dt>
 			    	<dd>{{ count($actor['title']) }}</dd>
@@ -81,12 +81,12 @@
 			    @if ($actor['awards'])
 
 			    	<p class="row well actor-awards">
-			    		<i class="fa fa-trophy"></i> 
+			    		<i class="fa fa-trophy"></i>
 			       		{{{ $actor['awards'] }}}
 			       	</p>
 
 			    @endif
-			    	  
+
 			</section>
 		</div>
 
@@ -115,7 +115,7 @@
 			<div class="heading"><i class="fa fa-star"></i> {{ trans('main.filmo') }}</div>
 
 			<table class="table table-striped clearfix">
-				<tbody>		
+				<tbody>
 					@foreach ( Helpers::sortByYear($actor['title']) as $v)
 			        	<tr>
 			        		<td class="col-sm-1">

@@ -25,13 +25,13 @@
 @stop
 
 @section('bodytag')
-  <body id="title-page">
+  <body id="title-page" itemscope itemtype="http://schema.org/Movie">
 @stop
 
 @section('content')
 
     <section class="container" id="content">
-    
+
         <div class="row responses"> @include('Partials.Response') </div>
 
         <div class="col-sm-9">
@@ -111,8 +111,8 @@
                             {{ HTML::socialLink('facebook') }}
                             {{ HTML::socialLink('twitter', $title->title) }}
                             {{ HTML::socialLink('google') }}
-                        </div> 
-                        <div id="lists">                      	
+                        </div>
+                        <div id="lists">
                             @if ($options->enableBuyNow())
                                 @if ($title->affiliate_link)
                                     <a href="{{ $title->affiliate_link }}" class="btn btn-primary"><i class="fa fa-dollar"></i> {{ trans('main.buy now') }}</a>
@@ -190,7 +190,7 @@
                     </div>
                 </div>
                 @endif
-                
+
                 @if($title->type === 'series' || ! Hooks::hasReplace('Titles.Show.LinksPanel'))
                     <div data-bind="moreLess" class="row">
                         @include('Titles.Partials.DetailsPanel')
